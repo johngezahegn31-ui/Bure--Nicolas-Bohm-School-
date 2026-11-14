@@ -1,0 +1,94 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f4f8;
+  color: #222;
+}
+
+header {
+  background: #123d70;
+  color: white;
+  text-align: center;
+  padding: 25px 12px;
+}
+
+header h1 {
+  font-size: 23px;
+  margin: 5px;
+}
+
+header p {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+main {
+  width: 92%;
+  max-width: 600px;
+  margin: 25px auto;
+}
+
+form {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000015;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+  background: white;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #2676c9;
+  border-color: #2676c9;
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  background: #1263a5;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #777;
+  cursor: not-allowed;
+}
+
+#status {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #555;
+}

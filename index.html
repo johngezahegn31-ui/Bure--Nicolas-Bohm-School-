@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BURE NICHOLAS BOHM SCHOOL</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>BURE NICHOLAS BOHM SCHOOL</h1>
+    <p>STUDENT REGISTRATION FORM</p>
+  </header>
+
+  <main>
+    <form id="studentForm">
+      <label>Student Full Name</label>
+      <input id="student-name" type="text" required>
+
+      <label>Student Photo</label>
+      <input id="student-photo" type="file" accept="image/*">
+
+      <label>Parent Photo</label>
+      <input id="parent-photo" type="file" accept="image/*">
+
+      <label>Age</label>
+      <input id="age" type="number" min="1" required>
+
+      <label>NID Number</label>
+      <input id="nid" type="text" required>
+
+      <label>Education Status</label>
+      <select id="education-status" required>
+        <option value="">Choose status</option>
+        <option value="New Student">New Student</option>
+        <option value="Transfer Student">Transfer Student</option>
+        <option value="Returning Student">Returning Student</option>
+      </select>
+
+      <label>Previous Grade</label>
+      <input id="previous-grade" type="text">
+
+      <label>Average Score</label>
+      <input id="average" type="number" min="0" max="100" step="0.01">
+
+      <label>Section</label>
+      <select id="section" required>
+        <option value="">Choose section</option>
+        <option>A</option><option>B</option><option>C</option>
+        <option>D</option><option>E</option><option>F</option>
+        <option>G</option>
+      </select>
+
+      <label>Student Signature (write name)</label>
+      <input id="student-signature" type="text">
+
+      <label>Parent Signature (write name)</label>
+      <input id="parent-signature" type="text">
+
+      <button id="submit-btn" type="submit">REGISTER STUDENT</button>
+      <p id="status" role="status"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>© BURE NICHOLAS BOHM SCHOOL</p>
+  </footer>
+</body>
+</html>
